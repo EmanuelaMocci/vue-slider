@@ -16,9 +16,20 @@ h1{
     width: 400px;
     margin: 20px;
 }
+.contenuto-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenuto-img i{
+    font-size: 50px;
+    margin: 50px;
+    color: black;
+}
+.contenuto-img i:hover{
+    color: #F6A934;
+}
 .immagine{
-    display: block;
     height: 500px;
     border-radius: 5px;
-    margin: auto;
 }
