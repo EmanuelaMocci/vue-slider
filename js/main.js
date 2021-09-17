@@ -7,6 +7,19 @@ var app = new Vue({
         imageIndex: 0
     },
     methods: {
+        counterLeft: function(){
+            this.imageIndex++;
 
+            if(this.imageIndex >= this.image.length){
+                this.imageIndex = 0;
+            } 
+        },
+        counterRight: function(){
+            this.imageIndex--;
+
+            if(this.imageIndex == -1){
+                this.imageIndex = this.image.length -1;
+            }
+        }
     }
 })

@@ -23,7 +23,6 @@ h1{
 }
 .contenuto-img i{
     font-size: 50px;
-    margin: 50px;
     color: black;
 }
 .contenuto-img i:hover{
@@ -31,5 +30,6 @@ h1{
 }
 .immagine{
     height: 500px;
+    width: 600px;
     border-radius: 5px;
 }

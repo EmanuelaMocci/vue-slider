@@ -24,9 +24,9 @@
         <img :src="logo" class="logo">
         <h1>{{titolo}}</h1>
         <div class="contenuto-img">
-            <a href="#"><i class="fas fa-angle-left"></i></a>
+            <a href="#"><i class="fas fa-angle-left" v-on:click="counterLeft()"></i></a>
             <img :src="image[imageIndex]" class="immagine">
-            <a href="#"><i class="fas fa-angle-right"></i></a>
+            <a href="#"><i class="fas fa-angle-right" v-on:click="counterRight()"></i></a>
         </div>
 
     </div>
