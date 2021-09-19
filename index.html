@@ -24,9 +24,14 @@
         <img :src="logo" class="logo">
         <h1>{{titolo}}</h1>
         <div class="contenuto-img">
-            <a href="#"><i class="fas fa-angle-left" v-on:click="counterLeft()"></i></a>
-            <img :src="image[imageIndex]" class="immagine">
-            <a href="#"><i class="fas fa-angle-right" v-on:click="counterRight()"></i></a>
+            <a href="#"><i class="fas fa-angle-left arrow" v-on:click="counterLeft()"></i></a>
+            <div class="img">
+                <img :src="image[imageIndex]" class="immagine">
+                <div class="circle">
+                    <i class="fas fa-circle circle-img" v-for='(images, index) in image' :class='imageIndex == index ? "active" : "" '></i>
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-angle-right arrow" v-on:click="counterRight()"></i></a>
         </div>
 
     </div>
