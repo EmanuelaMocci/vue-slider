@@ -28,7 +28,7 @@
             <div class="img">
                 <img :src="image[imageIndex]" class="immagine">
                 <div class="circle">
-                    <i class="fas fa-circle circle-img" v-for='(images, index) in image' :class='imageIndex == index ? "active" : "" '></i>
+                    <i class="fas fa-circle circle-img" v-for='(images, index) in image' :class='imageIndex == index ? "active" : "" ' @click="imageIndex = index"></i>
                 </div>
             </div>
             <a href="#"><i class="fas fa-angle-right arrow" v-on:click="counterRight()"></i></a>
